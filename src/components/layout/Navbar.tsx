@@ -20,16 +20,16 @@ export function Navbar() {
             <PawPrint className="w-6 h-6 text-primary-foreground" />
           </div>
           <span className="font-headline font-bold text-xl tracking-tight hidden sm:inline-block">
-            Paw<span className="text-primary">Market</span>
+            Dogs<span className="text-primary">Paradise</span>
           </span>
         </Link>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-8 font-medium">
-          <Link href="/pets" className="hover:text-primary transition-colors">Pets</Link>
-          <Link href="/shop" className="hover:text-primary transition-colors">Shop</Link>
-          <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
+          <Link href="/pets" className="hover:text-primary transition-colors">Breeds</Link>
+          <Link href="/shop" className="hover:text-primary transition-colors">Gallery</Link>
           <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+          <Link href="/services" className="hover:text-primary transition-colors">Contact Us</Link>
         </div>
 
         {/* Search Bar */}
@@ -38,8 +38,8 @@ export function Navbar() {
           isSearchFocused ? "max-w-md" : "max-w-xs"
         )}>
           <Search className="absolute left-3 w-4 h-4 text-muted-foreground" />
-          <Input 
-            placeholder="Search pets, toys, food..." 
+          <Input
+            placeholder="Search breeds, puppies..."
             className="pl-10 bg-secondary border-none"
             onFocus={() => setIsSearchFocused(true)}
             onBlur={() => setIsSearchFocused(false)}

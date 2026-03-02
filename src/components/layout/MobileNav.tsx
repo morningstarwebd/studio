@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 
 const items = [
   { icon: Home, label: "Home", href: "/" },
-  { icon: Search, label: "Explore", href: "/pets" },
+  { icon: Search, label: "Breeds", href: "/pets" },
   { icon: Heart, label: "Wishlist", href: "/wishlist" },
-  { icon: ShoppingBag, label: "Shop", href: "/shop" },
+  { icon: ShoppingBag, label: "Gallery", href: "/shop" },
   { icon: User, label: "Me", href: "/profile" },
 ];
 
@@ -23,7 +23,7 @@ export function MobileNav() {
         {items.map(({ icon: Icon, label, href }) => {
           const isActive = pathname === href;
           return (
-            <Link 
+            <Link
               key={href}
               href={href}
               className={cn(

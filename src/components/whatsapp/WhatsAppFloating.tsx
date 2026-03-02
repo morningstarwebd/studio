@@ -15,8 +15,8 @@ export function WhatsAppFloating() {
   }, []);
 
   const handleWhatsApp = () => {
-    const message = "Hi PawMarket! I'm interested in learning more about your pets and products.";
-    window.open(`https://wa.me/1234567890?text=${encodeURIComponent(message)}`, "_blank");
+    const message = "Hi Dogs Paradise! I'm interested in learning more about your puppies and breeds.";
+    window.open(`https://wa.me/919060602037?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (
@@ -36,7 +36,7 @@ export function WhatsAppFloating() {
             <MessageCircle className="w-8 h-8 text-white fill-current" />
             <span className="sr-only">WhatsApp Support</span>
           </Button>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1 }}
