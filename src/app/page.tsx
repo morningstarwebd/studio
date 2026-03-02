@@ -3,7 +3,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star, Heart, ShieldCheck, Truck, Clock } from "lucide-react";
+import { ArrowRight, Star, Heart, ShieldCheck, Truck, Clock, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
