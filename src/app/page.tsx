@@ -35,6 +35,7 @@ const breedCatalog = [
   { id: "siamese", name: "Elegant Siamese", description: "Intelligent, social, and very vocal.", image: "breed-siamese" },
   { id: "beagle", name: "Active Beagles", description: "Merry dogs with a sense of adventure.", image: "breed-beagle" },
   { id: "golden", name: "Golden Retrievers", description: "Loyal friends with a heart of gold.", image: "hero-dog" },
+  { id: "beagle", name: "Royal Beagles", description: "Gentle and intelligent companions.", image: "breed-beagle" },
 ];
 
 const testimonials = [
@@ -143,10 +144,10 @@ export default function Home() {
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent className="-ml-4 md:-ml-8">
-              {breedCatalog.map((breed) => {
+              {breedCatalog.map((breed, idx) => {
                 const imgData = PlaceHolderImages.find(i => i.id === breed.image);
                 return (
-                  <CarouselItem key={breed.id} className="pl-4 md:pl-8 basis-[85%] md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={`${breed.id}-${idx}`} className="pl-4 md:pl-8 basis-[85%] md:basis-1/2 lg:basis-1/3">
                     <Link href={`/pets?search=${breed.id}`}>
                       <motion.div 
                         whileHover={{ y: -10 }}
@@ -314,6 +315,7 @@ export default function Home() {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="bg-primary rounded-[3rem] p-12 md:p-24 relative overflow-hidden text-primary-foreground text-center">
+            {/* Background Paw Pattern */}
             <div className="absolute inset-0 opacity-10 pointer-events-none">
               <div className="absolute top-10 left-10"><PawPrint className="w-24 h-24 rotate-12" /></div>
               <div className="absolute bottom-10 right-10"><PawPrint className="w-24 h-24 -rotate-12" /></div>
