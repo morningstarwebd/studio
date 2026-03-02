@@ -111,7 +111,7 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0, scale: 1, rotate: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, type: "spring" }}
-            className="relative w-full max-w-sm mx-auto md:max-w-none md:w-auto"
+            className="relative w-full max-w-sm mx-auto md:max-w-md lg:max-w-lg"
           >
             <div className="relative aspect-[4/5] w-full rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <Image
