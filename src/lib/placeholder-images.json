@@ -21,7 +21,7 @@
     {
       "id": "pet-rabbit",
       "description": "Cute white rabbit",
-      "imageUrl": "https://picsum.photos/seed/pet4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1695510864636-38ff5ba5a945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyYWJiaXQlMjBwZXR8ZW58MHx8fHwxNzcyNDQ0OTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rabbit pet"
     },
     {
@@ -29,6 +29,24 @@
       "description": "Colorful macaw parrot",
       "imageUrl": "https://images.unsplash.com/photo-1623922766457-e30aa11de9a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFycm90JTIwYmlyZHxlbnwwfHx8fDE3NzI0NDMzMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "parrot bird"
+    },
+    {
+      "id": "breed-pug",
+      "description": "Cute pug dog",
+      "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pug dog"
+    },
+    {
+      "id": "breed-siamese",
+      "description": "Siamese cat sitting elegantly",
+      "imageUrl": "https://images.unsplash.com/photo-1513245543132-31f507417b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "siamese cat"
+    },
+    {
+      "id": "breed-beagle",
+      "description": "Beagle puppy in the garden",
+      "imageUrl": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beagle dog"
     },
     {
       "id": "prod-food",

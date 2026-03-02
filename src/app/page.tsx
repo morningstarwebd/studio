@@ -3,10 +3,17 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star, Heart, ShieldCheck, Truck, Clock, PawPrint } from "lucide-react";
+import { ArrowRight, Star, Heart, ShieldCheck, Truck, Clock, PawPrint, Info } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -21,6 +28,13 @@ const featuredPets = [
   { id: 1, name: "Luna", breed: "Golden Retriever", age: "2 Months", gender: "Female", price: "$1,200", image: PlaceHolderImages.find(i => i.id === "pet-puppy") },
   { id: 2, name: "Simba", breed: "Persian Cat", age: "3 Months", gender: "Male", price: "$850", image: PlaceHolderImages.find(i => i.id === "pet-kitten") },
   { id: 3, name: "Coco", breed: "Holland Lop", age: "4 Months", gender: "Female", price: "$200", image: PlaceHolderImages.find(i => i.id === "pet-rabbit") },
+];
+
+const breedCatalog = [
+  { id: "pug", name: "Cheerful Pugs", description: "The perfect companion for city living.", image: PlaceHolderImages.find(i => i.id === "breed-pug") },
+  { id: "siamese", name: "Elegant Siamese", description: "Intelligent, social, and very vocal.", image: PlaceHolderImages.find(i => i.id === "breed-siamese") },
+  { id: "beagle", name: "Active Beagles", description: "Merry dogs with a sense of adventure.", image: PlaceHolderImages.find(i => i.id === "breed-beagle") },
+  { id: "golden", name: "Golden Retrievers", description: "Loyal friends with a heart of gold.", image: PlaceHolderImages.find(i => i.id === "hero-dog") },
 ];
 
 export default function Home() {
@@ -119,6 +133,57 @@ export default function Home() {
               </div>
             </motion.div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Breed Lookbook Section - The "Page Turner" feel */}
+      <section className="py-24 bg-primary text-primary-foreground overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Discover Our Lookbook</h2>
+            <p className="text-primary-foreground/70 max-w-xl mx-auto">Flip through our curated collection of premium breeds. Find the personality that matches yours.</p>
+          </div>
+
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent className="-ml-4 md:-ml-8">
+              {breedCatalog.map((breed) => (
+                <CarouselItem key={breed.id} className="pl-4 md:pl-8 md:basis-1/2 lg:basis-1/3">
+                  <Link href={`/pets?search=${breed.id}`}>
+                    <motion.div 
+                      whileHover={{ y: -10 }}
+                      className="group relative aspect-[3/4] rounded-[2.5rem] overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-2xl"
+                    >
+                      <Image 
+                        src={breed.image?.imageUrl || ""} 
+                        alt={breed.name} 
+                        fill 
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-ai-hint={breed.image?.imageHint}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                      <div className="absolute bottom-0 left-0 right-0 p-8">
+                        <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{breed.name}</h3>
+                        <p className="text-sm text-white/70 mb-4 line-clamp-2">{breed.description}</p>
+                        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                          Explore Breed <ArrowRight className="w-4 h-4" />
+                        </div>
+                      </div>
+                    </motion.div>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="hidden md:block">
+              <CarouselPrevious className="bg-white/10 hover:bg-white/20 border-white/20 text-white" />
+              <CarouselNext className="bg-white/10 hover:bg-white/20 border-white/20 text-white" />
+            </div>
+          </Carousel>
         </div>
       </section>
 
