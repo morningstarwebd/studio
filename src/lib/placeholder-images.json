@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-dog",
+      "description": "Happy golden retriever running in a park",
+      "imageUrl": "https://images.unsplash.com/photo-1693615774176-a5560f55ac49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z29sZGVuJTIwcmV0cmlldmVyfGVufDB8fHx8MTc3MjQ0MzMzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "golden retriever"
+    },
+    {
+      "id": "pet-puppy",
+      "description": "Cute golden retriever puppy",
+      "imageUrl": "https://images.unsplash.com/photo-1619980201524-2f237decc377?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwdXBweSUyMGRvZ3xlbnwwfHx8fDE3NzI0NDMzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "puppy dog"
+    },
+    {
+      "id": "pet-kitten",
+      "description": "Fluffy ginger kitten",
+      "imageUrl": "https://images.unsplash.com/photo-1751402985413-7d1b1ecc237e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2l0dGVuJTIwY2F0fGVufDB8fHx8MTc3MjQ0MzMzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitten cat"
+    },
+    {
+      "id": "pet-rabbit",
+      "description": "Cute white rabbit",
+      "imageUrl": "https://picsum.photos/seed/pet4/600/400",
+      "imageHint": "rabbit pet"
+    },
+    {
+      "id": "pet-parrot",
+      "description": "Colorful macaw parrot",
+      "imageUrl": "https://images.unsplash.com/photo-1623922766457-e30aa11de9a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFycm90JTIwYmlyZHxlbnwwfHx8fDE3NzI0NDMzMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parrot bird"
+    },
+    {
+      "id": "prod-food",
+      "description": "Premium dog food pack",
+      "imageUrl": "https://images.unsplash.com/photo-1714068691256-cd3d65f97795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2clMjBmb29kfGVufDB8fHx8MTc3MjQxMTAzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog food"
+    },
+    {
+      "id": "prod-toy",
+      "description": "Durable chew toy for pets",
+      "imageUrl": "https://images.unsplash.com/photo-1589924749359-9697080c3577?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXQlMjB0b3l8ZW58MHx8fHwxNzcyNDQzMzM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pet toy"
+    },
+    {
+      "id": "prod-shampoo",
+      "description": "Organic pet shampoo bottle",
+      "imageUrl": "https://images.unsplash.com/photo-1669910803409-a447456beaca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXQlMjBzaGFtcG9vfGVufDB8fHx8MTc3MjQ0MzMzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pet shampoo"
+    }
+  ]
 }

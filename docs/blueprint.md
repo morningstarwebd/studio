@@ -1,0 +1,19 @@
+# **App Name**: PawMarket PetShop
+
+## Core Features:
+
+- Pet and Product Listings: Browse, filter, and search for available pets by breed, price, age, and gender. Explore pet products by categories, including variants and stock status, all sourced from Firebase Firestore.
+- Secure Booking & Shopping Cart: A multi-step booking process for pets, checking availability and collecting user details, integrating with Razorpay for secure payments. A comprehensive shopping cart for products with quantity management and order summaries. Both pet bookings and product orders are stored in Firestore.
+- User Authentication & Wishlist: Firebase Authentication for user login/signup, allowing users to manage their profile and save favorite pets and products to a personalized wishlist stored in Firestore.
+- Offline-First PWA Experience: An 'app-like' Progressive Web App (PWA) with features like home screen installability, push notifications, and offline browsing for previously viewed pets and products using caching strategies, ensuring a smooth user experience even without internet.
+- Personalized Notifications: Receive important updates and offers via push notifications powered by Firebase Cloud Messaging (FCM) for events such as booking confirmations, order shipments, or new pet availabilities tailored to user preferences.
+- Integrated WhatsApp Support: Direct customer support through a floating WhatsApp button, offering pre-filled messages with pet or product details for quick and convenient communication with pet experts.
+- Review and Rating System: Customers can submit and view reviews and ratings for pets and products, providing valuable feedback and building trust. All reviews are stored and managed within Firestore.
+
+## Style Guidelines:
+
+- The visual scheme embraces a light aesthetic, anchored by a deep, sophisticated green. The primary color is a rich forest green, chosen to convey trust and quality, with its vibrant presence at #2E8B5A. A subtly tinted background in a very pale green, #F8FAF9, provides a gentle foundation, ensuring clarity and calm. A warm gold accent, #D4A853, introduces a touch of luxury and visual hierarchy for interactive elements.
+- Headline font: 'Clash Display' or 'Cabinet Grotesk' (sans-serif) for an elegant, modern impact. Body font: 'DM Sans' (sans-serif) for excellent readability and a contemporary feel. Accent font: 'Cormorant Garamond' (serif) used selectively for special highlights, particularly in italic. Note: currently only Google Fonts are supported.
+- Utilize 'Lucide React' for a set of clean, modern, and highly scalable icons, ensuring a consistent and app-like visual language throughout the application. Specific elements like paw prints, hearts for wishlists, and shopping cart icons will be visually distinct yet harmonious.
+- Desktop navigation features a traditional horizontal bar, while mobile prioritizes an 'app-like' experience with a persistent bottom tab bar. The homepage uses full-screen sections with engaging scroll-based reveals. Detail pages adopt a two-column layout on desktop, transitioning to a stacked, scrollable format on mobile. Filters are presented in a dedicated sidebar on larger screens, collapsing into a bottom sheet drawer for mobile users.
+- Animations, powered by Framer Motion, will be subtle yet engaging. Expect smooth page transitions, scroll-based content reveals (e.g., animated paw print pattern on hero, item cards sliding in), and interactive micro-animations on buttons, links, and card interactions. These ensure a dynamic and modern user experience without feeling distracting.
