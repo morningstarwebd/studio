@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -13,10 +12,12 @@ import {
   Grid2X2, 
   List, 
   ArrowUpDown,
-  PawPrint
+  PawPrint,
+  Star
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
   Select,
