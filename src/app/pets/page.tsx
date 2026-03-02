@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -7,10 +8,7 @@ import { Input } from "@/components/ui/input";
 import { 
   Search, 
   Filter, 
-  ChevronDown, 
   Heart, 
-  Grid2X2, 
-  List, 
   ArrowUpDown,
   PawPrint,
   Star
